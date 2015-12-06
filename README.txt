@@ -5,7 +5,7 @@ CONTENTS OF THIS FILE
 
 *Introduction
 *Requirements
-*Recommended modules (Optional)
+*Recommended Modules (Optional)
 *Installation
 *Configuration
 *Troubleshooting
@@ -39,7 +39,59 @@ is fully available)
 
 REQUIREMENTS
 ----------------------------------------------------------------------
+ * Requires the following programming packages and versions for the 
+   system to be operational:
+   
 
+
+RECOMMENDED MODULES
+----------------------------------------------------------------------
+
+
+
+INSTALLATION
+----------------------------------------------------------------------
+ * For installation there is no extensive installation file neccessary 
+   to add this project to another, but rather just to append it to a 
+   current system.
+ 
+ * Please make sure to download and include this project within
+   Tropo's Web API for PHP directory (commonly /tropo-webapi-php). 
+   This provided me with the simplest setup considering the user 
+   interface is through a phone and not with a computer.
+ 
+ * A setup/installation script(setup.py) that is to be run setting up 
+   mostly file and directory permissions.
+
+
+CONFIGURATION
+----------------------------------------------------------------------
+
+ * Configuring file and directory permissions to make sure your 
+   any personal information is secure from use:
+   
+   - Directories:
+	  ~ /includes: 
+	    > chmod 755 /includes
+		  This makes your directory accessible to various files, but 
+		  only full permissions to you.
+		> chmod 775 /includes
+		  Only use if you plan to make this a group project, basically
+		  for multiuser editing.
+	  ~ /parsers:
+	    > chmod 755 /parsers
+		> chmod 775 /parsers
+   
+   - Files:
+     ~ all files:
+	   > chmod 644 <filename>
+	     This should be the default but please check permissions or 
+		 the system may not run properly.
+		 
+ * For additional help for file permissions and directory permissions 
+   please use this link.
+   
+   http://ss64.com/bash/chmod.html
 
 
 TROUBLESHOOTING
