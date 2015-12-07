@@ -5,7 +5,7 @@ CONTENTS OF THIS FILE
 
 *Introduction
 *Requirements
-*Recommended Modules (Optional)
+*Recommended Modules
 *Installation
 *Configuration
 *Troubleshooting
@@ -31,7 +31,7 @@ an example). These files are designed to work with the cell service
 Tropo, but can be used with other services provided that the files are
 in the service's recommended language.
 
-*No current page for project
+*No current webpage for project.
 
 *Bugs and Reports can be sent to my email (provided later once project
 is fully available)
@@ -42,11 +42,34 @@ REQUIREMENTS
  * Requires the following programming packages and versions for the 
    system to be operational:
    
+     Technology		|	Version
+   - Apache			|	2.4.9 or higher
+   - PHP 			|	5.5.12 or higher
+   - MySQL			|	5.6.17 or higher
+   - Tropo			|	Get most recent version available on GitHub
+   - Python			|	3.5 or higher
+   
+ * Make sure to create a developers account with Tropo because this
+   will help you find how scalable this project is for free use and 
+   for large scale use.
 
 
 RECOMMENDED MODULES
 ----------------------------------------------------------------------
 
+ * WAMP
+   - This tool is extremely useful especially when dealing with a 
+     majority of web based scripting and projects. Use this to get all
+	 necessary technologies except for Python. Will give you the most 
+	 recent versions and its available for free. Plus the community is
+	 excellent for help with problems or advanced methods for free 
+	 software packages like this.
+	 
+ * RapidSMS
+   - A great versatile tool that would be helpful if you have a mobile
+     broadcast tool like a cellular modem. This will make it easier to
+	 move away from Tropo, but will still be able to use the same code
+	 with various modifications.
 
 
 INSTALLATION
@@ -88,6 +111,9 @@ CONFIGURATION
 	     This should be the default but please check permissions or 
 		 the system may not run properly.
 		 
+ * NEVER 'chmod 644' A DIRECTORY/FOLDER!!! This may cause files to be
+   inaccessible to files outside the directory.
+   
  * For additional help for file permissions and directory permissions 
    please use this link.
    
